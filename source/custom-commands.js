@@ -557,7 +557,7 @@ target.toLowerCase().replace(/ /g,'-');
 	shop: function(target, room, user) {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox('<div class = "Broadcast-black"><center><h4><b><u>The InterVersal Shop</u></b></h4><table border="1" cellspacing="0" cellpadding="3"><tr><th>Items</th><th>Description</th><th>Cost</th></tr>' +
-		'<tr><td>Lotto Ticket</td><td>Buys you an lottery ticket.</td><td>3</td></tr>' +
+		'<tr><td>Bot</td><td>Buys you a for your room.</td><td>3</td></tr>' +
 		'<tr><td>Symbol</td><td>Buys a custom symbol to go infront of name and puts you at top of userlist. (temporary until restart)</td><td>5</td></tr>' +
 		'<tr><td>Fix</td><td>Buys the ability to alter your current custom avatar or trainer card. (don\'t buy if you have neither)</td><td>10</td></tr>' +
 		'<tr><td>Poof</td><td>Buys the ability to add a custom poof.</td><td>15</td></tr>' +
@@ -565,7 +565,7 @@ target.toLowerCase().replace(/ /g,'-');
 		'<tr><td>Animated</td><td>Buys an animated avatar to be applied to your name. (you supply)</td><td>25</td></tr>' +
 		'<tr><td>Trainer</td><td>Buys a trainer card which shows information through a command such as <i>/beforemath</i>.</td><td>30</td></tr>' +
 		'<tr><td>Room</td><td>Buys a chatroom for you to own. (within reason, can be refused)</td><td>50</td></tr>' +
-		'<tr><td>Voice</td><td>Buys a promotion to global voice.</td><td>100</td></tr>' +
+		'<tr><td>Welcomemessage</td><td>Buys a welcome message for your room.</td><td>100</td></tr>' +
 		'<tr><td>Player</td><td>Buys a promotion to room player of any room you want.</td><td>250</td></tr>' +
 		'</table><br/>To buy an item from the shop, use /buy <i>command</i>. <br/></center>');
 	},
@@ -1677,13 +1677,13 @@ tournamentnote: function(target, room, user){
 			return connection.sendTo(target, "|noinit|joinfailed|The room '" + target + "' could not be joined.");
 		}
 		if (target.toLowerCase() == "lobby") {
-			return connection.sendTo('lobby','|html|<div class="Broadcast-yellow" border="5"><center><img src="http://i58.tinypic.com/2lj18o6.jpg"></center><br />' +
+			return connection.sendTo('lobby','|html|<div class="Broadcast-yellow" border="5"><center><img src="http://i.imgur.com/H5Ye7gS.gif"></center><br />' +
                                         '<center><b><font size="4">Welcome to Universal Server!</b></font><br>' +       
-                                        'Here at our server we call home we have a community of our own. The community offers things like Sports, Casino, Pokemon Help, League, Tiers, and more. What makes this server special you say is what you make of it, Our guestv are the most important people for our server, without you guys it not really a server is it?<br>' +
+                                        'This is a league. The league needs some membrrs. What makes this server special you say is what you make of it, Our guestv are the most important people for our server, without you guys it not really a server is it?<br>' +
                                         'Well if you need any help, ask an Staff {Consider that their symbols show as an; Driver (%), Moderator (@), Leader (&), or an Admin (~)<br>' +
-                                        'If you need anything or need help with a different server, feel free to pm BeforeMath, Judgmental, Or Judge Joe Brownz.<br>' +
-                                        'We hope you have fun while you\'re here at the InterVersal Server! If so, then please be sure to tell your friends about us!<br>' +
-                                        '</u></b></center><br/><center><a href ="https://gist.github.com/E4Arsh/8577715"><b>This Server is hosted By BlakJack</b></a></center><br/><br/> ' +
+                                        'If you need anything or need help with a different server, feel free to pm adithya.<br>' +
+                                        'We hope you have fun wh! If so, then please be sure to tell your friends about us!<br>' +
+                                        '</u></b></center><br/><center><a href ="https://gist.github.com/E4Arsh/8577715"><b>This Server is hosted By Adithya</b></a></center><br/><br/> ' +
                                         '<hr width="85%">' +
                                         '<center><a href="http://theinternationserver.weebly.com/"><button class="blackbutton" title="Site"><font color="red"><b>Site</b></a></button>   |   <a href="http://universityis.boards.net/"><button class="blackbutton" title="Forums"><font color="red"><b>Forums</b></a></button>' +
                                         '</div>');
