@@ -5,7 +5,7 @@
  */
 
 // Bot's Name
-global.botName = 'InterVersal';
+global.botName = 'Tsunami Bank';
 
 var joinAllRooms = true;
 if (joinAllRooms === false) {
